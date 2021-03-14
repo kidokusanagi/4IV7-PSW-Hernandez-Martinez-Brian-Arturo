@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+
+html,body{
+
+    background-color: orangered;
+}
+.maincontainer{
+    border: 4px solid rgb(10, 10, 100);
+    border-radius: 20px;
+     margin: 3rem;
+     width: 100%;
+     height: 100px;
+     background-color: white;
+}
+article{
+    width: 20%;
+    margin: 5px;
+    padding: 1rem;
+    border: 2px solid rgb(00,00,00);
+    background-color: silver;
+    display: inline-block;
+
+}
+iframe{
+    width: 100%;
+    height: 70%;
+    margin: 1rem;
+    border: 5px solid rgb(00,00,00);
+    border-radius: 30px;
+}
