@@ -10,6 +10,17 @@ html,body{
     background-color: orange;
 
 }
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    .banner a{
+        text-decoration: none;
+    }
+        .banner aside{
+            width: 15rem;
+        }
 aside{
     width: 20%;
     height: 30px;
