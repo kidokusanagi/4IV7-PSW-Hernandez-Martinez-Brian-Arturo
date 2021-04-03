@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./JS/edad.js"></script>
+    <link rel="stylesheet" href="css/ejecicios.css">
+</head>
+<body>
+    <p>Realiza un algoritmo que calcule la edad de una persona</p>
+    <form method="POST" name="formulario">
+    <table>
+        <tr>
+            <td class="td_sup">Introduce el año en que naciste : </td>
+            <td class="td_inf"><input type="text" name="cantidad1" onkeypress="return validarn(event)"></td>
+        </tr>
+
+        <tr>
+            <td class="td_sup">Introduce el año en actual : </td>
+            <td class="td_inf"><input type="text" name="cantidad2" onkeypress="return validarn(event)"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class="td_inf"><input type="button" value="Enviar" name="enviar" onclick="interes()"></td>
+        </tr>
+        <tr>
+            <td class="td_sup">La edad es :</td>
+            <td><input type="text" name="sueldoti" id="cantidadi" readonly="readonly" class="input_text"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" value="Borrar" name="reset" onclick="borrar()" ></td>
+        </tr>
+        </table>
+        </form>
+</body>
+</html>

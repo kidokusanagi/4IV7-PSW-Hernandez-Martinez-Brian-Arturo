@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ejecicios.css">
+    <script src="./JS/calificacion.js"></script>
+</head>
+<body>
+    <p>Un alumno desea saber cual sera su calificacion final en la materia de Algoritmos.Dicjha calificacion se compone de los siguientes porcentajes:</p>
+    <p>55% del promedio de sus tres calificaciones parciales</p>
+    <p>30% de la calificacion del examen final</p>
+    <p>15% de la calificacion de un trabajo final</p>
+    <form method="POST" name="formulario">
+        <table>
+            <tr>
+                <td class="td_sup">Introduce la calificacion el primer parcial</td>
+                <td class="td_inf"><input type="text" name="cantidad" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Introduce la calificacion del segundo parcial</td>
+                <td class="td_inf"><input type="text" name="parcial1" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Introduce la calificacion del tercer parcial</td>
+                <td class="td_inf"><input type="text" name="parcial2" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Introduce la calificacion del examen final</td>
+                <td class="td_inf"><input type="text" name="cantidad1" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Introduce la calificacion del trabajo extra</td>
+                <td class="td_inf"><input type="text" name="cantidad2" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_inf"><input type="button" value="Enviar" name="enviar" onclick="interes()"></td>
+            </tr>
+            <tr>
+                <td class="td_sup1">La calificacion final es :</td>
+                <td><input type="text" name="sueldoti" id="cantidadi" readonly="readonly" class="input_text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="Borrar" name="reset" onclick="borrar()" ></td>
+            </tr>
+        </table>
+
+</body>
+</html>
