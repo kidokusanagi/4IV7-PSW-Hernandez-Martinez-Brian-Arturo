@@ -34,6 +34,10 @@ function interes() {
                 alert("El numero de estudiantes es mayor al grupo")
                 document.formulario.sueldoti.value = "Ingresa datos correctos";
                 document.formulario.sueldote.value = "Ingresa datos correctos";
+             }else{              if (result1+result2<result) {
+                alert("El numero de estudiantes es menor al grupo")
+                document.formulario.sueldoti.value = "Ingresa datos correctos";
+                document.formulario.sueldote.value = "Ingresa datos correctos";
              }else{
         var interes =result*(result1*0.010);
         var interes1 = result*(result2*0.010);
@@ -46,7 +50,7 @@ function interes() {
     }
     
 
-}
+}}
 
 function borrar() {
     document.formulario.sueldoti.value = "";

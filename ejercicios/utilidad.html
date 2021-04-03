@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Utilidad</title>
     <link rel="stylesheet" href="css/ejecicios.css">
-    <script src="./JS/java.js"></script>
+    <script src="./JS/utilidad.js"></script>
 </head>
 <body>
     <p>Calcula la utilida que un trabajador recibe en el reparto anula de utilidades si este se le asigna como un porcentaje de su salario mensual que depende de su antigüedad en la empresa de acuerdo a lo siguiente</p>
@@ -30,5 +30,26 @@
         <li>20% del salario</li>
       </ul>
     </div>
+    <form method="POST" name="formulario">
+      <table>
+          <tr>
+              <td class="td_sup">Introduce el salario:</td>
+              <td class="td_inf"><input type="text" name="cantidad" onkeypress="return validarn(event)"></td>
+          </tr>
+          <tr>
+              <td class="td_sup">Introduce la antigüedad en años:</td>
+              <td class="td_inf"><input type="text" name="cantidad1" onkeypress="return validarn(event)"></td>
+          <tr>
+              <td></td>
+              <td class="td_inf"><input type="button" value="Enviar" name="enviar" onclick="interes()"></td>
+          </tr>
+          <tr>
+              <td class="td_sup1">Su utilidad es de  :</td>
+              <td><input type="text" name="sueldoti" id="cantidadi" readonly="readonly" class="input_text"></td>
+          </tr>
+          <tr>
+              <td></td>
+              <td><input type="button" value="Borrar" name="reset" onclick="borrar()" ></td>
+          </tr>
 </body>
 </html>

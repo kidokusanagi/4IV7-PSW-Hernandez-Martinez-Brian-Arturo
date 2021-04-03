@@ -6,9 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/ejecicios.css">
-    <script src="./JS/java.js"></script>
+    <script src="./JS/mayor.js"></script>
 </head>
 <body>
     <p>Leer tres numeros diferentes e imprimir el numero mayo de los tres</p>
+    <form method="POST" name="formulario">
+        <table>
+            <tr>
+                <td class="td_sup">Introduce el primer numero : </td>
+                <td class="td_inf"><input type="text" name="cantidad" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Introduce el segundo numero :</td>
+                <td class="td_inf"><input type="text" name="hombres" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td class="td_sup">Introduce el tercer numero :</td>
+                <td class="td_inf"><input type="text" name="mujeres" onkeypress="return validarn(event)"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="td_inf"><input type="button" value="Enviar" name="enviar" onclick="interes()"></td>
+            </tr>
+            <tr>
+                <td class="td_sup1">El primer numero es:</td>
+                <td><input type="text" name="sueldoti" id="cantidadi" readonly="readonly" class="input_text"></td>
+            </tr>
+            <tr>
+                <td class="td_sup1">El segundo numero es:</td>
+                <td><input type="text" name="sueldote" id="cantidade" readonly="readonly" class="input_text"></td>
+            </tr>
+            <tr>
+                <td class="td_sup1">El tercer numero es:</td>
+                <td><input type="text" name="sueldota" id="cantidade1" readonly="readonly" class="input_text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="Borrar" name="reset" onclick="borrar()" ></td>
+            </tr>
+        </table>
+
+    </form>
 </body>
 </html>
