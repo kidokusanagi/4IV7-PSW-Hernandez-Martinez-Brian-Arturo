@@ -9,11 +9,19 @@ function validarn(e) {
     return patron.test(prueba);
     
 }
+function validares(e) {
+    var patron1= /^\s+$/;
+    if (patron1.test(e)) {
+        return false;
+    }else{
+        return true;
+    }
+}
 function interes() {
     var valor= document.formulario.cantidad.value;
     var valor1=document.formulario.hombres.value;
-    var result=parseInt(valor)
-    var result1=parseInt(valor1)
+    var result=parseFloat(valor)
+    var result1=parseFloat(valor1)
     if (result==result1) {
         var interes = result1*result;
         document.formulario.sueldoti.value = "Los numeros son iguales";

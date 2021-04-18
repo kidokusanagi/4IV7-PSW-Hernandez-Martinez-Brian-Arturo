@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ejercicio3.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header cabecera">
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Curriculum.html">Currriculum</a> </li>
+                <li><a href="Hobbies.html">Hobbies</a></li>
+                <li><a href="ejercicios.html">Ejercicios JavaScript</a></li>
+                <script src="JS/ejercicio3.js"></script>
+            </ul>
+        </nav>
+    </header> 
+    <div class="maincontainer">  
+        <header class="header1 cabecera">
+       <nav class="navigation">
+        <br>Dada una lista de palabras encontrar la palabra que mas numero de caracteres unicos tenga </br>
+        <p>Ejemplo:CASA=3(C,A,S), PERRO=4(P,E,R,O)</p>
+        <p>Considera solamente un alfabeto de la A-Z en mayusculas</p>
+        <p>Las palabras ingresadas deberan estar separadas por una coma, no se aceptan espacios</p>
+        <div class="problema-content">
+            <input type="text" class="problema-input" placeholder="Ingresa las palabras separadas por una coma." 
+            id="p3-input" onkeypress="return validar(event)">
+            <button type="button" class="problema-button" style="margin-top: 1rem;" onclick="problema()">Enviar</button>
+            <br> 
+            <p id="output">
+
+             </p>
+             <p id="output1">
+
+             </p>
+         </div>
+</body>
+</html>

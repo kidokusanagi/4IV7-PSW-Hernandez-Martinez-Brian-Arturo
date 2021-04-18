@@ -1,14 +1,17 @@
 body{
-    background-color: #a23Ae8;
+    background-color: #1C188C;
     line-height: 1.3rem ;
     font-size: 1rem;
     margin: 0;
+    padding: auto;
+    line-height: 200%;
 }
+
 
 .header{
     background: #3D64F2 ;
     color: white;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1rem;
     font-size: 2rem;
     right: 0;
     top: 0;
@@ -52,9 +55,9 @@ body{
 }            
 
 .header1{
-    background: #773DF2 ;
+    background: #17BF30 ;
     color: white;
-    padding: 1.5rem 2rem;
+    padding: 2rem 3rem;
     font-size: 2rem;
     right: 0;
     top: 0;
@@ -89,13 +92,22 @@ body{
                 color: black;
                 background: white;
             }
-    .frame{
-        margin: 2rem 0;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        border: 0;
-        height: 600px;
-        border-radius: 10px;
-    }        
+            input.problema-input{
+                padding: 1rem;
+                color: rgb(34, 34, 34);
+                background: none;
+                border: none;
+                border-bottom:2px solid #17A67D;
+                width:100%;
+            }
+            .problema-button{
+                border: none;
+                background-color: #17A67D;
+                color: white;              
+                font-weight: bold;
+                padding: 0.8rem;
+                border-radius:4px;
+                box-shadow:0 1px 3px gray;
+            }     
+
+
