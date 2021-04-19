@@ -8,14 +8,33 @@ function validarn(e) {
     return patron.test(prueba);
     
 }
+function validares(e) {
+    var patron1= /^\s+$/;
+    if (patron1.test(e)) {
+        return false;
+    }else{
+        return true;
+    }
+}   
 function interes() {
     var valor= document.formulario.cantidad.value;
     var valor1=document.formulario.hombres.value;
     var valor2=document.formulario.mujeres.value;
-    var result=parseInt(valor)
-    var result1=parseInt(valor1)
-    var result2=parseInt(valor2)
-    if ((result<result1)<result2) {
+    var result=parseFloat(valor)
+    var result1=parseFloat(valor1)
+    var result2=parseFloat(valor2)
+    if(valor=="" || validares(valor)==false){
+        alert("Por favor llena el campo del primer numero")
+        document.formulario.cantidad.focus();
+    }else{
+        if(valor1=="" || validares(valor1)==false){
+        alert("Por favor llena el campo del segundo numero")
+        document.formulario.hombres.focus();
+    }else{
+        if(valor2=="" || validares(valor2)==false){    
+        alert("Por favor llena el campo del primer numero")
+        document.formulario.mujeres.focus();
+        }else{if ((result<result1)<result2) {
         if (result<result1) {
             var interes = result2;
             var interes1 = result1
@@ -70,6 +89,8 @@ function interes() {
 
          }
     }
+    }}}
+    
     
 
 }
