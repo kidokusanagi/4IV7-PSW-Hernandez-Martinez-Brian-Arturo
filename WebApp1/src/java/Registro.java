@@ -7,7 +7,6 @@
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -16,8 +15,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author kusan
  */
-@WebServlet(urlPatterns = {"/CRUD"})
-public class CRUD extends HttpServlet {
+public class Registro extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -33,13 +31,28 @@ public class CRUD extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
+            String nom,appat,apmat,correo;
+            int edad;
+            
+            nom= request.getParameter("nombre");
+            appat=request.getParameter("appat");
+            apmat=request.getParameter("apmat");
+            correo=request.getParameter("email");
+            edad=Integer.parseInt(request.getParameter("edad"));
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet CRUD</title>");            
+            out.println("<title>Servlet Registro</title>");            
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet CRUD at " + request.getContextPath() + "</h1>");
+            out.println("<br>Tu nombre es :"+ nom
+                        +"<br>Tu Apellido Paterno es :"+ appat
+                        + "<br>Tu Apellido Materno es :"+ apmat
+                        +"<br>Tu Edad es :"+ edad
+                        +"<br>Tu Correo es :"+ correo);
+            out.println("<h1>Registro existoso</h1>"
+                        +"<br>"
+                        +"<a href='index.html'>Regresar al formulario</a>");
             out.println("</body>");
             out.println("</html>");
         }
